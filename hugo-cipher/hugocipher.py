@@ -25,6 +25,7 @@ def cipher_word(word: str) -> str:
 
     return cipher
 
+
 def cipher_sentence(sentence: str) -> str:
     """
     Cipher an entire sentence using the Hugo-Cipher.
@@ -48,9 +49,11 @@ def cipher_sentence(sentence: str) -> str:
     # Remove the trailing space.
     return cipher.rstrip()
 
+
 def main() -> None:
     input_text = input('Input: ')
     print(cipher_sentence(input_text))
+
 
 if __name__ == "__main__":
     main()
