@@ -51,8 +51,15 @@ def cipher_sentence(sentence: str) -> str:
 
 
 def main() -> None:
-    input_text = input('Input: ')
-    print(cipher_sentence(input_text))
+    print('Enter a word or sentence to cipher, or press enter to exit.')
+
+    while True:
+        input_text = input('Input: ')
+
+        if not input_text:
+            break
+
+        print(cipher_sentence(input_text))
 
 
 if __name__ == "__main__":
