@@ -51,6 +51,13 @@ def cipher_sentence(sentence: str) -> str:
 
 
 def main() -> None:
+    def main() -> None:
+    args = sys.argv[1:]
+
+    if args:
+        print(cipher_sentence(" ".join(args)))
+        return
+    
     print('Enter a word or sentence to cipher, or press enter to exit.')
 
     while True:
