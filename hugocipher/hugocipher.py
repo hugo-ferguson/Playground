@@ -1,3 +1,5 @@
+import sys
+
 def cipher_word(word: str) -> str:
     """
     Cipher a single word using the Hugo-Cipher.
@@ -6,7 +8,7 @@ def cipher_word(word: str) -> str:
         word (str): The input word to convert into the cipher.
 
     Returns:
-        string: The ciphered word.
+        str: The ciphered word.
     """
     VOWELS = ['a', 'e', 'i', 'o', 'u']
     cipher = ''
@@ -36,7 +38,7 @@ def cipher_sentence(sentence: str) -> str:
         sentence (str): The input sentence to convert into the cipher.
 
     Returns:
-        string: The ciphered sentence.
+        str: The ciphered sentence.
     """
     # Split the sentence into words.
     words = sentence.split(' ')
@@ -51,7 +53,6 @@ def cipher_sentence(sentence: str) -> str:
 
 
 def main() -> None:
-    def main() -> None:
     args = sys.argv[1:]
 
     if args:
